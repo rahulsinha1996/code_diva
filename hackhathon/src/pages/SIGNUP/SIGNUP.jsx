@@ -24,6 +24,7 @@ const SIGNUP = (props) => {
              formData
           })
         })
+        alert("Sign Up successful")
        let data= await res.json();
        console.log(data)
       let id= data.user._id;

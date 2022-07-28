@@ -27,6 +27,7 @@ const handleClick = async()=>{
             password: formData.password
           })
         })
+        alert("Sign In successful")
        let data= await res.json();
         console.log(data)
         console.log(userId)
@@ -34,6 +35,7 @@ const handleClick = async()=>{
           navigate("/video")
         }
        } catch (error) {
+         alert("please fill right credentials")
         console.log(error)
        }
 }
