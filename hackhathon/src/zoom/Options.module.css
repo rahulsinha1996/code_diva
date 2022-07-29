@@ -1,0 +1,73 @@
+#inp1{
+    width: 400px;
+    height: 25px;
+}
+#main{
+    margin-top: -220px
+}
+#btn1{
+    height: 31px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(0, 98, 255);
+    border:1px solid rgb(0, 98, 255);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#inp2{
+    width: 400px;
+    height: 25px;
+    margin-top: 15px;
+}
+#btn2{
+    height: 31px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(0, 98, 255);
+    border:1px solid rgb(0, 98, 255);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#btn3{
+    height: 31px;
+    width: 130px; 
+    margin-top: 0px;
+    background-color: #f26d21;
+    border:1px solid #f26d21;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#btn4{
+    height: 31px;
+    width: 130px; 
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #f26d21;
+    border:1px solid #f26d21;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#btn5{
+    height: 31px;
+    width: 130px; 
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #f26d21;
+    border:1px solid #f26d21;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+#captionContain{
+    
+}
+#caption{
+    color: rgb(177, 52, 52);
+}

@@ -1,0 +1,14 @@
+#h1{
+    font-size: 25px;
+    color: rgb(10, 142, 10);
+}
+#ans{
+    height: 31px;
+    width: 130px; 
+    background-color: white;
+    border:2px solid rgb(10, 142, 10);
+    color: rgb(10, 142, 10);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}

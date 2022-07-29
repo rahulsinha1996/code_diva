@@ -5,10 +5,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2%;
     margin-top:100px;
+    background-color: white;
 }
 .inputdiv{
     text-align: left;
     margin-left: 25%;
+    background-color: white;
 }
 .input{
     padding: 2%;
@@ -16,12 +18,14 @@
     border-radius: 8px;
     margin-bottom: 3%;
     border: 1px solid grey;
+    background-color: white;
 }
 .pwd{
     margin-top: -10px;
     margin-bottom: -8px;
     text-align: right;
     margin-right: 30%;
+ 
 }
 
 .btn{

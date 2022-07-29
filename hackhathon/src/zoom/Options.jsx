@@ -3,6 +3,7 @@ import CopyToClipboard from 'react-copy-to-clipboard'
 import { SocketContext } from '../SocketContext'
 import { useSpeechSynthesis } from 'react-speech-kit';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import styles from "./Options.module.css"
 
 export const Options = ({children}) => {
   const {me, callAccepted, name, setName, callEnded, leaveCall,callstart, startVideo,pauseVideo,callUser, idToCall, setIdToCall, answerCall}=useContext(SocketContext);
@@ -172,19 +173,19 @@ export const Options = ({children}) => {
   }
 
   return (
-    <div>
+    <div id= {styles.main}>
       <div>
-      <input type="text" label="name" value={name} onChange={(e)=>setName(e.target.value)}/>
+      <input id={styles.inp1} type="text" label="name" value={name} onChange={(e)=>setName(e.target.value)} placeholder= "Enter caller name here"/>
       <CopyToClipboard text={me}>
-      <button>Copy ID</button>
+      <button id={styles.btn1}>Copy ID</button>
       </CopyToClipboard>
       </div>
       <div>
-      <input type="text" label="ID to Call" value={idToCall} onChange={(e)=>setIdToCall(e.target.value)}/>
+      <input id={styles.inp2}  type="text" label="ID to Call" value={idToCall} onChange={(e)=>setIdToCall(e.target.value)} placeholder= "Enter copied id here"/>
       {callAccepted && !callEnded ? (
-        <button onClick={leaveCall}>Hang Up</button>
+        <button id={styles.btn2} onClick={leaveCall}>Hang Up</button>
       ) :
-      <button onClick={()=>callUser(idToCall)}>Call</button>
+      <button id={styles.btn2}  onClick={()=>callUser(idToCall)}>Call</button>
       }
       
       
@@ -192,16 +193,16 @@ export const Options = ({children}) => {
 
       
       {children}
-      {show &&  <div style={{border:"1px solid black"}}><p>
+      <div id= {styles.captionContain}><h2 id= {styles.caption}>
         {transcript}
-      </p></div>}
+      </h2></div>
       {
-        startAI ? <button onClick={disableAI}>Stop Assistant</button> : <button onClick={enableAI}>Start Assistant</button>
+        startAI ? <button id= {styles.btn3} onClick={disableAI}>Stop Assistant</button> : <button onClick={enableAI}>Start Assistant</button>
       }
       
       
-      <button onClick={pauseVideo}>Off Camera</button>
-      <button onClick={startVideo}>On Camera </button>
+      <button id= {styles.btn4}  onClick={pauseVideo}>Off Camera</button>
+      <button id= {styles.btn5}  onClick={startVideo}>On Camera </button>
      
      
     </div>

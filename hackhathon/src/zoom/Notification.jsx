@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import styles from "./Notification.module.css"
 
 import { SocketContext } from '../SocketContext'
 export const Notification = () => {
@@ -8,8 +9,8 @@ export const Notification = () => {
       {receivingCall && !callAccepted && (
 
         <div>
-          <h1>{name} is calling ....</h1>
-          <button onClick={answerCall}>Answer Call</button>
+          <h1 id= {styles.h1}>{name} is Calling ....</h1>
+          <button id= {styles.ans} onClick={answerCall}>Answer Call</button>
         </div>
 
       )}
