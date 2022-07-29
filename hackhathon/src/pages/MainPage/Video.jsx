@@ -11,7 +11,7 @@ function Video() {
 
   useEffect(() => {
     if (!userId) {
-      navigate("/login");
+      navigate("/signin");
     }
   }, [userId]);
 
