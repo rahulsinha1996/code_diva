@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import  styles from "./SIGNUP.module.css"
 import { Link , useNavigate } from "react-router-dom"
 import { useState } from 'react';
+import { SocketContext } from '../../SocketContext';
+
 
 const SIGNUP = (props) => {
+    const {myVideo, setStream, stream}=useContext(SocketContext)
+   
     const [formData, setFormData] = useState({})
     const navigate= useNavigate()
    const handleChange= (e)=>{
@@ -14,6 +18,12 @@ const SIGNUP = (props) => {
         [inputName] : e.target.value
       })
    }
+
+   useEffect(()=>{
+    
+		setStream("")
+		myVideo.current = stream
+   },[myVideo, stream])
    
    const handleClick = async()=>{
     try {
