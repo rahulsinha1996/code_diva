@@ -1,0 +1,31 @@
+.signin{
+    border: 2px solid honeydew;
+    width: 40%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2%;
+    margin-top:100px;
+}
+.inputdiv{
+    text-align: left;
+    margin-left: 25%;
+}
+.input{
+    padding: 2%;
+    width: 65%;
+    border-radius: 8px;
+    margin-bottom: 3%;
+    border: 1px solid grey;
+}
+
+.btn{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 70%;
+    padding: 2%;
+    border-radius: 8px;
+    border: 1px solid rgb(49, 121, 221);
+    font-weight: bold;
+    color: lavenderblush;
+    background-color: rgb(49, 121, 221);
+}

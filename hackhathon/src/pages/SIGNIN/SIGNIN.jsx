@@ -1,5 +1,5 @@
 import React from 'react'
-import "./SIGNIN.css"
+import styles from "./SIGNIN.module.css"
 import { Link ,useNavigate } from "react-router-dom"
 import { useState } from 'react'
 
@@ -42,20 +42,20 @@ const handleClick = async()=>{
 }
      
     return (
-        <div className='signup'>
+        <div className={styles.signin}>
         <h1>Already Registered ?</h1>
-        <div className='inputdiv'>
+        <div className={styles.inputdiv}>
         <label>Username *</label>
         <br />
-        <input className='input' name="username" placeholder='Enter Username'  onChange= {handleChange}/>
+        <input className={styles.input} name="username" placeholder='Enter Username'  onChange= {handleChange}/>
         <br />
         <label>Password</label>
         <br />
-        <input className='input' type="text" name="password"  placeholder='Enter Password' onChange= {handleChange}/>
+        <input className={styles.input} type="text" name="password"  placeholder='Enter Password' onChange= {handleChange}/>
         {/* <p className='pwd'>Forgot Password ?</p> */}
         <br />
         
-        <button onClick={handleClick} className='btn'>SIGN IN</button>
+        <button onClick={handleClick} className={styles.btn}>SIGN IN</button>
 
         <p>Doesn't have an account? <Link to= "/">Sign Up</Link> </p>
         </div>

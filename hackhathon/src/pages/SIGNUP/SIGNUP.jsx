@@ -1,7 +1,7 @@
 import React from 'react'
-import "./SIGNUP.css"
+import  styles from "./SIGNUP.module.css"
 import { Link , useNavigate } from "react-router-dom"
-import { useState } from 'react'
+import { useState } from 'react';
 
 const SIGNUP = (props) => {
     const [formData, setFormData] = useState({})
@@ -36,28 +36,30 @@ const SIGNUP = (props) => {
         console.log(error)
        }
    }
+
+ 
     return (
-        <div className='signup'>
+        <div className={styles.signup}>
             <h1>Create an Account</h1>
             <p>Personal Information</p>
-            <div className='inputdiv'>
-            <label className='label'> Name *</label>
+            <div className={styles.inputdiv}>
+            <label className={styles.label}> Name *</label>
             <br />
-            <input className='input' type="text" name="name" placeholder='Enter Name'  onChange= {handleChange}/>
+            <input className={styles.input} type="text" name="name" placeholder='Enter Name'  onChange= {handleChange}/>
             <br />
             <label>Username *</label>
             <br />
-            <input className='input' type="text" name="username" placeholder='Enter Username' onChange= {handleChange}/>
+            <input className={styles.input} type="text" name="username" placeholder='Enter Username' onChange= {handleChange}/>
             <br />
             <label>Email Address *</label>
             <br />
-            <input className='input' type="email" name="email" placeholder='Enter Email'  onChange= {handleChange}/>
+            <input className={styles.input} type="email" name="email" placeholder='Enter Email'  onChange= {handleChange}/>
             <br />
             <label>Password</label>
             <br />
-            <input className='input' type="text" name="password" placeholder='Enter Password'  onChange= {handleChange}/>
+            <input className={styles.input} type="text" name="password" placeholder='Enter Password'  onChange= {handleChange}/>
             <br />
-            <button onClick={handleClick} className='btn'>CREATE</button>
+            <button onClick={handleClick} className={styles.btn}>CREATE</button>
 
             <p>Already a user? <Link to= "/signin">Sign In</Link> </p>
             </div>
