@@ -10,7 +10,7 @@ export const VideoCall = () => {
     <div style={{display:"flex", gap:"20px", justifyContent:"center"}}>
       {stream && (
           <div style={{display:"block"}} id={styles.unit1}>
-            <div>{name}</div>
+            {/* <div>{name}</div> */}
           <video  id={styles.video1} playsInline muted ref={myVideo} autoPlay/>
         </div>
       )}
