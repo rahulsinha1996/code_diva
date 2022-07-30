@@ -23,7 +23,7 @@ const SIGNUP = (props) => {
     
 		setStream("")
 		myVideo.current = stream
-   },[myVideo, stream])
+   },[myVideo, stream , setStream])
    
    const handleClick = async()=>{
     try {

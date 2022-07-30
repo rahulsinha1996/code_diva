@@ -13,7 +13,7 @@ function Video() {
     if (!userId) {
       navigate("/signin");
     }
-  }, [userId]);
+  }, [userId , navigate]);
 
 
   return (
